@@ -34,12 +34,59 @@ nav ul {
 
 nav a {
     color: black;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 nav a:hover{
     color: black;
-    background-color: var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+}
+
+main a {
+    border-bottom: 2px solid var(--yellow);
+    color: black;
+    padding: 3px;
+}
+
+main a:hover{
+    color: var(--yellow)
+}
+
+/* ARTISTS */
+.artists{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.artist{
+    
+    list-style-type: none;
+    padding: 1rem;
+    min-width: 0;
+    width: 50%;
+}
+
+.artist-name{
+    font-weight: bold;
+}
+
+.artist-description{
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.artist-info{
+    line-height: 1.6em;
+}
+
+.description{
+    line-height: 2em;
+}
+
+.concerts{
+    height: 70vh;
+    max-height: 100%;
 }
 
 footer{
@@ -47,6 +94,14 @@ footer{
     justify-content: space-evenly;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+footer a{
+    color: var(--yellow);
+}
+
+footer a:hover{
+    color: black;
 }
 
 section{
