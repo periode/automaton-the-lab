@@ -21,18 +21,16 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#artists">Artists</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#exhibition">Exhibition</a></li>
+                <li><a href="#exhbition">Artists</a></li>
                 <li><a href="#workshop">Workshop</a></li>
                 <li><a href="#concerts">Concerts</a></li>
-                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#information">Information</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
         <section id="lab">
-            <div class="description">
+            <div class="description w-50">
                 <p>
                     <i>The Lab</i> is <a href="http://automatonlab.xyz" target="_blank"
                         rel="noopener noreferrer">Automaton</a>'s next installment in its series of event.
@@ -48,8 +46,12 @@
                     Park) 10405 Berlin.</p>
             </div>
         </section>
-        <section id="artists">
-            <h1>Artists</h1>
+        <section id="exhibition">
+            <h1>Exhibition</h1>
+            <div class="exhibition p-10 w-50">
+                The Lab comprises will feature a selection of works around the theme of __________________. [INSERT
+                SENTENCE HERE ABOUT CURATORIAL STATEMENT]. The exhibited artists are:
+            </div>
             <ul class="artists">
                 <li class="artist">
                     <div class="artist-name">
@@ -158,76 +160,69 @@
                 </li>
             </ul>
         </section>
-        <section id="location">
-            <h1>Location</h1>
-            <div class="location w-50">
-                <p>
-                    <b>The Lab</b> takes place at the Kleiner Wasserspeicher. The entrance is at the <b>northwest</b>
-                    corner. Since it is a former water tank, the ambient temperature is around 12 degrees celsius; we
-                    advise that you bring a sweater!
-                </p>
-            </div>
-        </section>
-        <section id="exhibition">
-            <h1>Exhibition</h1>
-            <div class="exhibition position-relative">
-                <div class="position-absolute top-50 start-50 flex-grow-1">
-                    <p>
-                        The exhibition is open from Wednesday 22.06 until Saturday 25.06, from 12:00 until 20:00.
-                    </p>
-                    <p>
-                        Due to limited capacity, tickets are required. See the <a href="#tickets">tickets</a> section.
-                    </p>
-                </div>
-            </div>
-        </section>
         <section id="workshop">
             <h1>Workshop</h1>
             <div class="workshop d-flex flex-wrap">
-                <div class="workshop-title w-25 mb-5">
-                    Composing with sound spatialization
+                <div class="row">
+                    <div class="workshop-legend w-25 mb-5">
+                        Composing with sound spatialization
+                    </div>
+                    <div class="workshop-description w-75 mb-5">
+                        <p>
+                            Sound diffusion across multiple speakers is an art form, especially where real-time control
+                            is
+                            concerned. This workshop features live sound spatialization techniques using Ambisonics and
+                            parametric-procedural diffusion methods.
+                        </p>
+                        <p>
+                            Participants will bring to the workshop an existing sound
+                            piece that is suitable for diffusion across 4-8 channels.
+                        </p>
+                        <p>
+                            At the end of the workshop, participants
+                            will setup their multichannel sound piece to be presented during the Automaton Lab
+                            exhibition in the unique sonic environment of the Kleiner Wasserspeicher.
+                        </p>
+                    </div>
                 </div>
-                <div class="workshop-description w-25 mb-5">
-                    <p>
-                        Sound diffusion across multiple speakers is an art form, especially where real-time control is
-                        concerned. This workshop features live sound spatialization techniques using Ambisonics and
-                        parametric-procedural diffusion methods.
-                    </p>
-                    <p>
-                        Participants will bring to the workshop an existing sound
-                        piece that is suitable for diffusion across 4-8 channels.
-                    </p>
-                    <p>
-                        At the end of the workshop, participants
-                        will setup their multichannel sound piece to be presented during the Automaton Lab exhibition.
-                    </p>
-                </div>
-                <div class="w-25 mb-5">
+
+                <div class="workshop-legend w-25 mb-5">
                     Workshop participants requirements
                 </div>
                 <div class="workshop-requirements w-25 mb-5">
                     Laptop with Reaper installed, if possible a sound card with more than 2 outputs, and a
                     midi-controller.
                 </div>
+                <div class="w-25 mb-5"></div>
                 <div class="workshop-dates w-25 mb-5">
-                    This workshop takes place from 18:00 until 22:00 on Wednesday 22.06 and Thursday 23.06.
+                    Wed 22.06 - 18:00 - 22:00<br />
+                    Thu 23.06 - 18:00 - 22:00<br />
+                    It is recommended to attend both sessions.<br />
+                </div>
+
+                <div class="workshop-organizer">
+                    Workshop organized and led by <a href="https://www.instagram.com/j.c_duarte/" target="_blank"
+                        rel="noopener noreferrer">Juan
+                        Duarte Regino</a>
                 </div>
                 <div class="w-25 mb-5"></div>
                 <div class="workshop-booking w-25 mb-5">
-                    Book your tickets here.
-                </div>
-                <div class="workshop-organizer">
-                    <a href="https://www.instagram.com/j.c_duarte/" target="_blank" rel="noopener noreferrer">Juan
-                        Duarte Regino</a>
+                    Book your tickets <a href="http://________" target="_blank" rel="noopener noreferrer">here</a>.
                 </div>
             </div>
         </section>
         <section id="concerts">
             <h1>Concert</h1>
+            <div class="description">
+                Concerts will take place on Friday and Saturday, and will consist of pairing sound and visual artists,
+                performing in the center of the Wasserspeicher. You need separate tickets for the concerts, which you
+                can buy <a href="http://_______" target="_blank" rel="noopener noreferrer">here</a>.
+            </div>
             <div class="concerts d-flex align-items-center justify-content-center">
-                <table class="container w-50">
+                <table class="container w-75 lineup">
                     <thead>
                         <tr>
+                            <td></td>
                             <td>24.06</td>
                             <td>25.06</td>
                         </tr>
@@ -235,29 +230,67 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Gina Lo</td>
-                            <td>Anton Filatov</td>
+                            <td class="time">20:30</td>
+                            <td><a href="ginalololo.bandcamp.com/" target="_blank" rel="noopener noreferrer">Gina Lo</a>
+                                <sup>audio</sup> x <a href="https://steinfeldalmapro.wixsite.com/website/"
+                                    target="_blank" rel="noopener noreferrer">Alma</a> <sup>visual</sup></td>
+                            <td><a href="http://antonfilatov.com/" target="_blank" rel="noopener noreferrer">Anton
+                                    Filatov</a> <sup>audio</sup> x <a href="https://www.godisaglitch.com/"
+                                    target="_blank" rel="noopener noreferrer">Geso</a> <sup>visual</sup></td>
                         </tr>
                         <tr>
-                            <td>Aron Ottignon</td>
-                            <td>Time Points</td>
+                            <td class="time">21:15</td>
+                            <td><a href="https://aronottignon.com/" target="_blank" rel="noopener noreferrer">Aron
+                                    Ottignon</a> <sup>audio</sup> x <a href="https://www.helinulas.info/"
+                                    target="_blank" rel="noopener noreferrer">Helin Ulas</a> <sup>visual</sup></td>
+                            <td><a href="https://soundcloud.com/quanta-records/sets/times-points-temps-long-qr009/s-TPPuhWxMBO3?si=b59608f48fbc44cb9b535e4e46bf369c"
+                                    target="_blank" rel="noopener noreferrer">Time Points</a> <sup>audio</sup> x <a
+                                    href="VanTa" target="_blank" rel="noopener noreferrer">VanTa</a> <sup>visual</sup>
+                            </td>
                         </tr>
 
                     </tbody>
                 </table>
             </div>
-
         </section>
-        <section id="tickets">
-            <h1>Tickets</h1>
-            <div class="tickets">
-                <p>We follow a sliding scale model:</p>
-                <ul>
-                    <li>5e pays for the space</li>
-                    <li>10e pays for the space and the artists</li>
-                    <li>15e pays for the space, the artists, and the organizers</li>
-                </ul>
+        <section id="information">
+            <h1>Information</h1>
+            <div class="information w-50">
+                <div class="location">
+                    <h2>Location</h2>
+                    <p>
+                        <b>The Lab</b> takes place at the Kleiner Wasserspeicher. The entrance is at the
+                        <b>northwest</b>
+                        corner; you can find it on the map <a href="https://www.openstreetmap.org/note/3202576"
+                            target="_blank" rel="noopener noreferrer">here</a>.
+                    </p>
+                    <p>Since it is a former water tank, the ambient temperature is around 12 degrees celsius; we
+                        advise that you bring a sweater!</p>
+                </div>
+
+                <div class="hours">
+                    <h2>Hours</h2>
+                    <div class="">
+                        <p>
+                            The exhibition is open from Wednesday 22.06 until Saturday 25.06, from 12:00 until 20:00.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tickets">
+                    <h2>Tickets</h2>
+                    <p>We follow a sliding scale model:</p>
+                    <ul>
+                        <li><span class="price">5€</span> pays for the space</li>
+                        <li><span class="price">10€</span> pays for the space and the artists</li>
+                        <li><span class="price">15€</span> pays for the space, the artists, and the organizers</li>
+                    </ul>
+                    <p>Due to limited capacity, we recommend that you <a href="http://________" target="_blank"
+                            rel="noopener noreferrer">buy tickets online</a> in advance. You can buy tickets for either
+                        exhibition or concerts.</p>
+                </div>
             </div>
+
         </section>
     </main>
     <footer class="container bottom">
