@@ -18,13 +18,20 @@ header {
     justify-content: space-between;
     padding: 1rem;
     height: min-content;
+    width: 100%;
 
     background-color: var(--grey);
 }
 
+@media (max-width: 992px) {}
+
 header a {
     color: black;
     text-decoration: none;
+}
+
+header a:hover {
+    color: var(--yellow);
 }
 
 nav ul {
@@ -32,12 +39,24 @@ nav ul {
     list-style: none;
 }
 
+@media (max-width: 992px) {
+    nav {
+        width: min-content;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: end;
+        margin: 0;
+    }
+}
+
 nav a {
     color: black;
     padding: 0.5rem;
 }
 
-nav a:hover{
+nav a:hover {
     color: black;
     border-bottom: 2px solid var(--yellow);
 }
@@ -48,89 +67,149 @@ main a {
     padding: 1px;
 }
 
-main a:hover{
+main a:hover {
     color: var(--yellow)
 }
 
 /* ARTISTS */
-.exhibition{
+.exhibition {
     font-style: italic;
     margin-bottom: 5em;
 }
 
-.artists{
+.artists {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 0;
 }
 
-.artist{
+.artist {
     list-style-type: none;
     padding: 1rem;
     min-width: 0;
     width: 50%;
 }
 
-.artist-name{
+@media (max-width: 992px) {
+    .artist {
+        width: 100%;
+    }
+}
+
+.artist-name {
     font-weight: bold;
 }
 
-.artist-description{
+.artist-description {
     padding: 10px;
     font-size: 0.9em;
 }
 
-.artist-info{
+.artist-info {
     line-height: 1.6em;
 }
 
-.description{
+.description {
+    width: 50%;
     line-height: 2em;
 }
 
+@media (max-width: 992px) {
+    .description {
+        width: 100%;
+    }
+}
+
 /* WORKSHOP */
-.workshop-legend{
+.workshop-legend {
     font-weight: bold;
     font-size: 1.2em;
 }
 
+.workshop-text {
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+    .workshop-text {
+        width: 100%;
+    }
+}
+
+
 /* CONCERTS */
-.concerts{
+.concerts {
     height: 70vh;
     max-height: 100%;
 }
 
-.lineup{
-    font-size: 1.2em;
+.day {
+    margin-bottom: 2rem;
 }
 
-.time{
+.performers {
+    padding: 0 1rem 2rem 1rem;
+}
+
+.lineup {
+    font-size: 1.2em;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    .lineup {
+        width: 100%;
+        display: block;
+    }
+}
+
+.time {
     font-style: italic;
     font-size: 0.8em;
 }
 
-sup{
+/* INFORMATIONe */
+.information {
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+    .information {
+        width: 100%;
+    }
+}
+
+sup {
     font-size: 0.6em;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
     margin-bottom: 1rem;
 }
 
-footer a{
+footer a {
     color: var(--yellow);
 }
 
-footer a:hover{
+footer a:hover {
     color: black;
 }
 
-section{
+section {
     padding-top: 15vh;
     min-height: 90vh;
+}
+
+@media (max-width: 992px) {
+    section {
+        padding-top: 5vh;
+    }
 }
 
 section h1 {
