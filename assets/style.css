@@ -8,6 +8,11 @@
     src: url("./NeueHaasUnicaPro-Regular.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "Teodor";
+    src: url("./Teodor-Light.otf") format('opentype');
+}
+
 body {
     font-family: "Haas-Regular", sans-serif;
     background-color: var(--grey);
@@ -71,10 +76,59 @@ main a:hover {
     color: var(--yellow)
 }
 
+.title{
+    font-family: 'Teodor', serif;
+}
+
+/* DESCRIPTION */
+.description {
+    width: 50%;
+    line-height: 2em;
+}
+
+@media (max-width: 992px) {
+    .description {
+        width: 100%;
+    }
+}
+
+.description-img{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 992px) {
+    .description-img{
+        justify-content: center;
+    }
+}
+
 /* ARTISTS */
+.exhibition-meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .exhibition {
     font-style: italic;
     margin-bottom: 5em;
+}
+
+.exhibition-img{
+    display: flex;
+    justify-content: end;
+    align-self: flex-start;
+}
+
+.exhibition-img img{
+    width: 25%;
+}
+
+@media (max-width: 992px) {
+    .exhibition-img img{
+        width: 100%;
+    }
 }
 
 .artists {
@@ -82,6 +136,17 @@ main a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 0;
+
+    background-image: url('octagon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width: 992px) {
+    .artists{
+        background-repeat: repeat-y;
+    }
 }
 
 .artist {
@@ -110,21 +175,11 @@ main a:hover {
     line-height: 1.6em;
 }
 
-.description {
-    width: 50%;
-    line-height: 2em;
-}
-
-@media (max-width: 992px) {
-    .description {
-        width: 100%;
-    }
-}
-
 /* WORKSHOP */
 .workshop-legend {
     font-weight: bold;
     font-size: 1.2em;
+    margin-bottom: 1rem;
 }
 
 .workshop-text {
@@ -137,11 +192,26 @@ main a:hover {
     }
 }
 
+.workshop-img{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 992px) {
+    .workshop-img{
+        justify-content: center;
+    }
+}
 
 /* CONCERTS */
 .concerts {
     height: 70vh;
     max-height: 100%;
+
+    background-image: url('octagon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .day {
@@ -171,15 +241,41 @@ main a:hover {
     font-size: 0.8em;
 }
 
-/* INFORMATIONe */
+/* INFORMATION */
+.information-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
 .information {
     width: 50%;
 }
 
 @media (max-width: 992px) {
-    .information {
+    .information-holder{
+        display: unset;
+    }
+
+    .information{
         width: 100%;
     }
+}
+
+.information-img{
+    width: 45%;
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 992px) {
+    .information-img{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.sub-info{
+    margin-bottom: 3rem;
 }
 
 sup {
