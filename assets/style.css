@@ -81,6 +81,11 @@ main a:hover {
 }
 
 /* DESCRIPTION */
+.description-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
 .description {
     width: 50%;
     line-height: 2em;
@@ -95,6 +100,7 @@ main a:hover {
 .description-img{
     display: flex;
     justify-content: end;
+    min-width: 25vw;
 }
 
 @media (max-width: 992px) {
@@ -137,7 +143,7 @@ main a:hover {
     justify-content: space-around;
     padding-left: 0;
 
-    background-image: url('octagon.svg');
+    background-image: url('illustrations/Asset\ 16.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -176,6 +182,16 @@ main a:hover {
 }
 
 /* WORKSHOP */
+.workshop-holder{
+    display: flex;
+}
+
+.workshop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .workshop-legend {
     font-weight: bold;
     font-size: 1.2em;
@@ -183,7 +199,7 @@ main a:hover {
 }
 
 .workshop-text {
-    width: 50%;
+    width: 80%;
 }
 
 @media (max-width: 992px) {
@@ -195,6 +211,8 @@ main a:hover {
 .workshop-img{
     display: flex;
     justify-content: end;
+    min-width: 25vw;
+    background-color: var(--yellow);
 }
 
 @media (max-width: 992px) {
@@ -208,7 +226,7 @@ main a:hover {
     height: 70vh;
     max-height: 100%;
 
-    background-image: url('octagon.svg');
+    background-image: url('illustrations/Asset\ 20.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
