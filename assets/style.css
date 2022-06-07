@@ -54,6 +54,10 @@ nav ul {
         justify-content: end;
         margin: 0;
     }
+
+    nav li {
+        margin-bottom: 1.2em;
+    }
 }
 
 nav a {
@@ -76,19 +80,24 @@ main a:hover {
     color: var(--yellow)
 }
 
-.title{
+.title {
     font-family: 'Teodor', serif;
 }
 
 /* DESCRIPTION */
-.description-holder{
+.description-holder {
     display: flex;
     justify-content: space-between;
 }
 
+@media (max-width: 992px) {
+    .description-holder {
+        flex-direction: column;
+    }
+}
+
 .description {
-    width: 50%;
-    line-height: 2em;
+    width: 55%;
 }
 
 @media (max-width: 992px) {
@@ -97,20 +106,79 @@ main a:hover {
     }
 }
 
-.description-img{
+.hero {
+    display: flex;
+    flex-direction: column;
+    line-height: 6em;
+}
+
+.hero-title {
+    font-size: 8em;
+}
+
+.hero-date {
+    font-size: 5em;
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 4em;
+    }
+
+    .hero-date {
+        font-size: 2em;
+    }
+}
+
+.hero-title {
+    font-family: 'Teodor', serif;
+}
+
+.hero-location{
+    line-height: 3em;
+}
+
+@media (max-width: 992px) {
+    .hero-location{
+        line-height: 1em;
+    }
+}
+
+.description-body {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+@media (max-width: 992px) {
+    .description-body {
+        font-size: 0.9em;
+    }
+}
+
+.cta {
+    background-color: var(--yellow);
+    /* float: right; */
+    padding: 0.5em;
+}
+
+.description-img {
     display: flex;
     justify-content: end;
     min-width: 25vw;
 }
 
+.description-img img{
+    width: 100%;
+}
+
 @media (max-width: 992px) {
-    .description-img{
+    .description-img {
         justify-content: center;
     }
 }
 
 /* ARTISTS */
-.exhibition-meta{
+.exhibition-meta {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,18 +189,18 @@ main a:hover {
     margin-bottom: 5em;
 }
 
-.exhibition-img{
+.exhibition-img {
     display: flex;
     justify-content: end;
     align-self: flex-start;
 }
 
-.exhibition-img img{
+.exhibition-img img {
     width: 25%;
 }
 
 @media (max-width: 992px) {
-    .exhibition-img img{
+    .exhibition-img img {
         width: 100%;
     }
 }
@@ -150,7 +218,7 @@ main a:hover {
 }
 
 @media (max-width: 992px) {
-    .artists{
+    .artists {
         background-repeat: repeat-y;
     }
 }
@@ -182,11 +250,11 @@ main a:hover {
 }
 
 /* WORKSHOP */
-.workshop-holder{
+.workshop-holder {
     display: flex;
 }
 
-.workshop{
+.workshop {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -204,11 +272,11 @@ main a:hover {
 
 @media (max-width: 992px) {
     .workshop-text {
-        width: 100%;
+        width: 9    0%;
     }
 }
 
-.workshop-img{
+.workshop-img {
     display: flex;
     justify-content: end;
     min-width: 25vw;
@@ -216,9 +284,13 @@ main a:hover {
 }
 
 @media (max-width: 992px) {
-    .workshop-img{
+    .workshop-img {
         justify-content: center;
     }
+}
+
+.workshop-img img{
+    width: 100%;
 }
 
 /* CONCERTS */
@@ -232,8 +304,19 @@ main a:hover {
     background-size: contain;
 }
 
+@media (max-width: 992px) {
+   .concerts{
+       height: 100vh;
+   }
+}
+
+
 .day {
     margin-bottom: 2rem;
+}
+
+.date {
+    font-size: 2em;
 }
 
 .performers {
@@ -260,7 +343,7 @@ main a:hover {
 }
 
 /* INFORMATION */
-.information-holder{
+.information-holder {
     display: flex;
     justify-content: space-between;
 }
@@ -270,29 +353,33 @@ main a:hover {
 }
 
 @media (max-width: 992px) {
-    .information-holder{
+    .information-holder {
         display: unset;
     }
 
-    .information{
+    .information {
         width: 100%;
     }
 }
 
-.information-img{
+.information-img {
     width: 45%;
     display: flex;
     justify-content: end;
 }
 
 @media (max-width: 992px) {
-    .information-img{
+    .information-img {
         width: 100%;
         justify-content: center;
     }
 }
 
-.sub-info{
+.information-img img{
+    width: 100%;
+}
+
+.sub-info {
     margin-bottom: 3rem;
 }
 
