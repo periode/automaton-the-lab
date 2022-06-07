@@ -97,7 +97,12 @@ main a:hover {
 }
 
 .description {
-    width: 55%;
+    width: 100%;
+    min-height: 70vh;
+    background-image: url("hero_540.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
 
 @media (max-width: 992px) {
