@@ -367,6 +367,10 @@ main a:hover {
     }
 }
 
+.price{
+    font-weight: bold;
+}
+
 .information-img {
     width: 45%;
     display: flex;
