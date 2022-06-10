@@ -98,11 +98,11 @@ main a:hover {
 
 .description {
     width: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
     background-image: url("hero_540.gif");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
 }
 
 @media (max-width: 992px) {
@@ -424,7 +424,13 @@ section {
 
 section h1 {
     border-bottom: 4px solid var(--yellow);
-    padding: 10px;
     margin-bottom: 50px;
-    text-align: right;
+    text-align: left;
+    font-size:5em;
+}
+
+@media (max-width: 992px) {
+    section h1 {
+        font-size: 4em;
+    }
 }
