@@ -13,22 +13,46 @@
     src: url("./Teodor-Light.otf") format('opentype');
 }
 
+::selection {
+    background: var(--yellow);
+    color: black;
+}
+
 body {
     font-family: "Haas-Regular", sans-serif;
     background-color: var(--grey);
 }
 
+/* Header */
+
+.title {
+    font-family: 'Teodor', serif;
+    font-size: 2em;
+}
+
+.subtitle
+{
+    position: absolute;
+    top: 4em;
+    display: block;
+    font-size: 0.8em;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
+    padding: 1em 2em;
     height: min-content;
     width: 100%;
-
     background-color: var(--grey);
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    header {
+        align-items: flex-start;
+    }
+}
 
 header a {
     color: black;
@@ -78,10 +102,6 @@ main a {
 
 main a:hover {
     color: var(--yellow)
-}
-
-.title {
-    font-family: 'Teodor', serif;
 }
 
 /* DESCRIPTION */
