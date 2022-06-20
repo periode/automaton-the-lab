@@ -392,6 +392,32 @@ main a:hover {
     margin-bottom: 3rem;
 }
 
+.partner-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.partner-logo {
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.logo1 {
+    background-image: url("partner_logos/ue.png");
+}
+
+.logo2 {
+    background-image: url("partner_logos/cvvl.png");
+}
+
+.logo3 {
+    background-image: url("partner_logos/som.png");
+}
+
 sup {
     font-size: 0.6em;
 }
