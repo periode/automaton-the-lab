@@ -218,7 +218,7 @@ main a:hover {
 
     background-image: url('illustrations/Asset\ 16.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: contain;
 }
 
