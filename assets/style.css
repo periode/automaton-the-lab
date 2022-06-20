@@ -411,6 +411,10 @@ main a:hover {
     background-position: center;
 }
 
+.partner-logos > a {
+    border: none;
+}
+
 .logo1 {
     background-image: url("partner_logos/ue.png");
 }
