@@ -218,8 +218,13 @@ main a:hover {
 
     background-image: url('illustrations/Asset\ 16.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: contain;
+}
+
+.artists::after {
+    content: "";
+    flex: auto;
 }
 
 @media (max-width: 992px) {
@@ -390,6 +395,36 @@ main a:hover {
 
 .sub-info {
     margin-bottom: 3rem;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.partner-logo {
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.partner-logos > a {
+    border: none;
+}
+
+.logo1 {
+    background-image: url("partner_logos/ue.png");
+}
+
+.logo2 {
+    background-image: url("partner_logos/cvvl.png");
+}
+
+.logo3 {
+    background-image: url("partner_logos/som.png");
 }
 
 sup {
